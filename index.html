@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -13,23 +14,35 @@
 
   <main class="main">
 
-    <section class="logo">
-      <img src="images/logo.svg" alt="Base Apparel">
+    <section class="logo animate__animated animate__fadeInDown">
+      <img src="./images/logo.svg" alt="Base Apparel">
     </section>
 
-    <section class="hero">
+    <section class="hero animate__animated animate__fadeIn"></section>
+
+    <section class="coming-soon animate__animated animate__slideInLeft">
       <h1 class="t-h1 t-h1--light">
         We're
       </h1>
-      <h1 class="t-h1">coming soon</h1>
+      <h1 class="t-h1">coming<br>soon</h1>
       <p class="t-p">
         Hello fellow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcements and our launch deals.    
       </p>
+      <form class="form" id="form" onsubmit="validateEmail();">
+        <input class="input" type="email" id="email" name="email" placeholder="Email Address">
+        <div class="error-icon" id="errorIcon">
+          <img src="./images/icon-error.svg">
+        </div>
+        <button class="btn">
+          <img src="./images/icon-arrow.svg" alt="arrow">
+        </button>
+      </form>
+      <p class="error-msg" id="errorMsg">Please provide a valid email</p>
     </section>
   
-    Email Address
+    
   </main>
-
+  <script src="app.js"></script>
 </body>
 </html>

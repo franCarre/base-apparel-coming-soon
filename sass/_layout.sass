@@ -1,0 +1,135 @@
+body
+  min-height: 100%
+  @media screen and (max-width: 767px)
+    padding-bottom: 4rem
+  @media screen and (min-width: 768px)
+    height: 100vh
+
+.main
+  height: 100%
+  width: 100%
+  @media screen and (min-width: 768px)
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    @media screen and (min-width: 1200px)
+      background-image: url(../images/bg-pattern-desktop.svg)
+      background-position: left bottom
+      background-repeat: no-repeat
+      background-size: cover
+      grid-template-columns: 1fr 42%
+      
+.logo
+  padding: 3.2rem
+  text-align: left
+  @media screen and (min-width: 992px)
+    margin: 0 auto
+    width: 50rem
+  @media screen and (min-width: 1200px)
+    padding-top: 6.4rem
+  & img
+    width: 10.5rem
+    @media screen and (min-width: 768px)
+      grid-column: 1 / 2
+      grid-row: 1 / 2
+      @media screen and (min-width: 992px)
+        width: initial
+
+.hero
+  background-image: url(../images/hero-mobile.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  height: 25rem
+  width: 100%
+  @media screen and (min-width: 768px)
+    background-image: url(../images/hero-desktop.jpg)
+    background-position: center
+    grid-column: 2 / 3
+    grid-row: 1 / 3
+    height: 100%
+
+.coming-soon
+  text-align: center
+  padding: 0 3.2rem
+  margin-top: 6.4rem
+  @media screen and (min-width: 768px)
+    margin: 0 auto
+    margin-bottom: 18rem
+    text-align: left
+    grid-column: 1 / 2
+    grid-row: 2 / 3
+    max-width: 50rem
+
+.form
+  border: 1px solid #E6C6C6
+  border-radius: 2.8rem
+  border-right: none
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 4.8rem
+  width: 100%
+  position: relative
+  @media screen and (min-width: 1200px)
+    height: 5.6rem
+  &--error
+    border: 2px solid $col-soft-red
+    border-right: none
+
+.input
+  border-radius: 2.8rem
+  font-family: $font-family
+  font-size: 1.4rem
+  outline: none
+  padding: 1rem 2.3rem
+  height: 4.8rem
+  width: 100%
+  @media screen and (min-width: 1200px)
+    height: 5.6rem
+    font-size: 1.6rem
+  &::placeholder
+    color: $col-des-red
+    opacity: 0.75
+
+.btn
+  background: $gradient-2
+  border-radius: 2.8rem
+  box-shadow: 0 10px 20px 0 rgba(198, 110, 110, 0.3)
+  transition: $transition
+  height: 4.8rem
+  width: 6.4rem
+  z-index: 1
+  @media screen and (min-width: 1200px)
+    height: 5.6rem
+    width: 12rem
+  &:hover
+    background: linear-gradient(135deg, hsl(0, 80%, 86%) 50%, hsl(0, 74%, 74%) 150%)
+    box-shadow: 0 10px 15px rgba(198, 110, 110, 0.5)
+    
+
+.error-icon
+  margin-right: 1rem
+  opacity: 0
+  position: absolute
+  transition: $transition transform, $transition opacity
+  transform: translateX(1rem)
+  right: 5.7rem
+  z-index: 1
+  @media screen and (min-width: 1200px)
+    right: 9.5rem
+  &--show
+    opacity: 1
+    transform: translateX(0)
+
+.error-msg
+  color: $col-soft-red
+  font-size: 1.3rem
+  text-align: left
+  margin-left: 2.4rem
+  margin-top: 1rem
+  opacity: 0
+  position: absolute
+  transition: $transition transform, $transition opacity
+  transform: translateY(-1rem)
+  &--show
+    opacity: 1
+    transform: translateY(0)
