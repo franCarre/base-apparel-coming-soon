@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -14,13 +14,13 @@
 
   <main class="main">
 
-    <section class="logo animate__animated animate__fadeInDown">
+    <section class="logo" data-aos="fade-down">
       <img src="./images/logo.svg" alt="Base Apparel">
     </section>
 
-    <section class="hero animate__animated animate__fadeIn"></section>
+    <section class="hero" data-aos="fade-left"></section>
 
-    <section class="coming-soon animate__animated animate__slideInLeft">
+    <section class="coming-soon" data-aos="fade-up">
       <h1 class="t-h1 t-h1--light">
         We're
       </h1>
@@ -43,6 +43,10 @@
   
     
   </main>
-  <script src="app.js"></script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
