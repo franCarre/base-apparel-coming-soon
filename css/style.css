@@ -2,147 +2,191 @@
 html {
   box-sizing: border-box;
   font-size: 62%;
-  height: 100%; }
+  height: 100%;
+}
 
 *, *::before, *::after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 h1, h2, h3, h4, p {
-  margin: 0; }
+  margin: 0;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 input, textarea {
   background: none;
   border: none;
   display: block;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 textarea {
-  resize: none; }
+  resize: none;
+}
 
 label {
-  display: block; }
+  display: block;
+}
 
 button {
   border: none;
   cursor: pointer;
-  outline: none; }
+  outline: none;
+}
 
 body {
   background-image: linear-gradient(135deg, white 0%, #fff5f5 100%);
   background-attachment: fixed;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+}
 
 .t-h1 {
   color: #413a3a;
   font-size: 4rem;
   letter-spacing: 1rem;
   line-height: 4.2rem;
-  text-transform: uppercase; }
-  @media screen and (min-width: 1200px) {
-    .t-h1 {
-      font-size: 6.4rem;
-      letter-spacing: 1.7rem;
-      line-height: 6.4rem; } }
-  .t-h1--light {
-    color: #ce9797;
-    font-weight: 300; }
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .t-h1 {
+    font-size: 6.4rem;
+    letter-spacing: 1.7rem;
+    line-height: 6.4rem;
+  }
+}
+.t-h1--light {
+  color: #ce9797;
+  font-weight: 300;
+}
 
 .t-p {
   color: #ce9797;
   font-size: 1.4rem;
   line-height: 2.2rem;
   letter-spacing: 0;
-  margin: 1.6rem 0 3.2rem; }
-  @media screen and (min-width: 1200px) {
-    .t-p {
-      font-size: 1.6rem;
-      line-height: 2.8rem;
-      margin-top: 1.8rem; } }
+  margin: 1.6rem 0 3.2rem;
+}
+@media screen and (min-width: 1200px) {
+  .t-p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    margin-top: 1.8rem;
+  }
+}
 
 body {
-  min-height: 100%; }
-  @media screen and (max-width: 767px) {
-    body {
-      padding-bottom: 4rem; } }
-  @media screen and (min-width: 768px) {
-    body {
-      height: 100vh; } }
+  min-height: 100%;
+}
+@media screen and (max-width: 767px) {
+  body {
+    padding-bottom: 4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+}
 
 .main {
   height: 100%;
-  width: 100%; }
-  @media screen and (min-width: 768px) {
-    .main {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); } }
-  @media screen and (min-width: 768px) and (min-width: 1200px) {
-    .main {
-      background-image: url(../images/bg-pattern-desktop.svg);
-      background-position: left bottom;
-      background-repeat: no-repeat;
-      background-size: cover;
-      grid-template-columns: 1fr 42%; } }
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: url(../images/bg-pattern-desktop.svg);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .main {
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: 1fr 42%;
+  }
+}
 
 .logo {
   padding: 3.2rem;
-  text-align: left; }
-  @media screen and (min-width: 992px) {
-    .logo {
-      margin: 0 auto;
-      width: 50rem; } }
-  @media screen and (min-width: 1200px) {
-    .logo {
-      padding-top: 6.4rem; } }
+  text-align: left;
+}
+@media screen and (min-width: 992px) {
+  .logo {
+    margin: 0 auto;
+    width: 50rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-top: 6.4rem;
+  }
+}
+.logo img {
+  width: 10.5rem;
+}
+@media screen and (min-width: 768px) {
   .logo img {
-    width: 10.5rem; }
-    @media screen and (min-width: 768px) {
-      .logo img {
-        grid-column: 1/2;
-        grid-row: 1/2; } }
-  @media screen and (min-width: 768px) and (min-width: 992px) {
-    .logo img {
-      width: initial; } }
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 992px) {
+  .logo img {
+    width: initial;
+  }
+}
 
 .hero {
   background-image: url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25rem;
-  width: 100%; }
-  @media screen and (min-width: 768px) {
-    .hero {
-      background-image: url(../images/hero-desktop.jpg);
-      background-position: center;
-      grid-column: 2/3;
-      grid-row: 1/3;
-      height: 100%; } }
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/hero-desktop.jpg);
+    background-position: center;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    height: 100%;
+  }
+}
 
 .coming-soon {
   text-align: center;
   padding: 0 3.2rem;
-  margin-top: 6.4rem; }
-  @media screen and (min-width: 768px) {
-    .coming-soon {
-      margin: 0 auto;
-      margin-bottom: 18rem;
-      text-align: left;
-      grid-column: 1/2;
-      grid-row: 2/3;
-      max-width: 50rem; } }
+  margin-top: 6.4rem;
+}
+@media screen and (min-width: 768px) {
+  .coming-soon {
+    margin: 0 auto;
+    margin-bottom: 18rem;
+    text-align: left;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-width: 50rem;
+  }
+}
 
 .form {
   border: 1px solid #E6C6C6;
@@ -153,13 +197,17 @@ body {
   justify-content: space-between;
   height: 4.8rem;
   width: 100%;
-  position: relative; }
-  @media screen and (min-width: 1200px) {
-    .form {
-      height: 5.6rem; } }
-  .form--error {
-    border: 2px solid #f96262;
-    border-right: none; }
+  position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    height: 5.6rem;
+  }
+}
+.form--error {
+  border: 2px solid #f96262;
+  border-right: none;
+}
 
 .input {
   border-radius: 2.8rem;
@@ -168,14 +216,18 @@ body {
   outline: none;
   padding: 1rem 2.3rem;
   height: 4.8rem;
-  width: 100%; }
-  @media screen and (min-width: 1200px) {
-    .input {
-      height: 5.6rem;
-      font-size: 1.6rem; } }
-  .input::placeholder {
-    color: #ce9797;
-    opacity: 0.75; }
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .input {
+    height: 5.6rem;
+    font-size: 1.6rem;
+  }
+}
+.input::placeholder {
+  color: #ce9797;
+  opacity: 0.75;
+}
 
 .btn {
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
@@ -184,14 +236,18 @@ body {
   transition: 200ms ease-in-out;
   height: 4.8rem;
   width: 6.4rem;
-  z-index: 1; }
-  @media screen and (min-width: 1200px) {
-    .btn {
-      height: 5.6rem;
-      width: 12rem; } }
-  .btn:hover {
-    background: linear-gradient(135deg, #f8bfbf 50%, #ee8c8c 150%);
-    box-shadow: 0 10px 15px rgba(198, 110, 110, 0.5); }
+  z-index: 1;
+}
+@media screen and (min-width: 1200px) {
+  .btn {
+    height: 5.6rem;
+    width: 12rem;
+  }
+}
+.btn:hover {
+  background: linear-gradient(135deg, #f8bfbf 50%, #ee8c8c 150%);
+  box-shadow: 0 10px 15px rgba(198, 110, 110, 0.5);
+}
 
 .error-icon {
   margin-right: 1rem;
@@ -200,13 +256,17 @@ body {
   transition: 200ms ease-in-out transform, 200ms ease-in-out opacity;
   transform: translateX(1rem);
   right: 5.7rem;
-  z-index: 1; }
-  @media screen and (min-width: 1200px) {
-    .error-icon {
-      right: 9.5rem; } }
-  .error-icon--show {
-    opacity: 1;
-    transform: translateX(0); }
+  z-index: 1;
+}
+@media screen and (min-width: 1200px) {
+  .error-icon {
+    right: 9.5rem;
+  }
+}
+.error-icon--show {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 .error-msg {
   color: #f96262;
@@ -217,9 +277,9 @@ body {
   opacity: 0;
   position: absolute;
   transition: 200ms ease-in-out transform, 200ms ease-in-out opacity;
-  transform: translateY(-1rem); }
-  .error-msg--show {
-    opacity: 1;
-    transform: translateY(0); }
-
-/*# sourceMappingURL=style.css.map */
+  transform: translateY(-1rem);
+}
+.error-msg--show {
+  opacity: 1;
+  transform: translateY(0);
+}
